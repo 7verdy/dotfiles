@@ -14,3 +14,12 @@ mkdir -p "$HOME/.config/rofi/verdy"
 ln -sf "$SCRIPT_WD/rofi/theme.rasi" "$HOME/.config/rofi/verdy/theme.rasi"
 ln -sf "$SCRIPT_WD/rofi/colors.rasi" "$HOME/.config/rofi/verdy/colors.rasi"
 ln -sf "$SCRIPT_WD/rofi/launcher.sh" "$HOME/.config/rofi/verdy/launcher.sh"
+
+# Set symlink for bashrc
+ln -sf "$SCRIPT_WD/bashrc" "$HOME/.bashrc"
+
+# Set symlink for profile
+ln -sf "$SCRIPT_WD/profile" "$HOME/.profile"
+
+# Set symlink for vimrc
+ln -sf "$SCRIPT_WD/vimrc" "$HOME/.vimrc"
