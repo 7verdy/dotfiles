@@ -1,9 +1,15 @@
+SCRIPT_WD="$(dirname $(realpath "$BASH_SOURCE"))"
+
+# Copy the background to ~/Pictures to be used by i3
+cp "$SCRIPT_WD/img/bloom.png" "$HOME/Pictures/"
+
 # Set simlink for i3 config
-ln -sf "$PWD/i3/config" "$HOME/.config/i3/config"
-#Set simlink for polybar
+ln -sf "$SCRIPT_WD/i3/config" "$HOME/.config/i3/config"
+# Set simlink for polybar
 mkdir -p "$HOME/.config/polybar/verdy"
-ln -sf "$PWD/polybar/config" "$HOME/.config/polybar/config"
+ln -sf "$SCRIPT_WD/polybar/config.ini" "$HOME/.config/polybar/verdy/config.ini"
 
 # Set simlink for rofi
 mkdir -p "$HOME/.config/rofi/verdy"
-ln -sf "$PWD/rofi/*" "$HOME/.config/rofi/verdy/"
+ln -sf "$SCRIPT_WD/rofi/theme.rasi" "$HOME/.config/rofi/verdy/theme.rasi"
+ln -sf "$SCRIPT_WD/rofi/launcher.sh" "$HOME/.config/rofi/verdy/launcher.sh"
