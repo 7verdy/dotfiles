@@ -7,7 +7,7 @@ set $mod Mod4
 # set default desktop layout (default is tiling)
 # workspace_layout tabbed <stacking|tabbed>
 
-exec_always --no-startup-id polybar -c ~/.config/polybar/verdy/config.ini bar
+exec_always --no-startup-id pkill polybar; polybar -c ~/.config/polybar/verdy/config.ini bar
 exec --no-startup-id feh --bg-fill "$HOME/Pictures/bloom.png"
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>

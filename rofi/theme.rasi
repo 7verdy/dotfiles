@@ -1,12 +1,3 @@
-/*
- *
- * Author  : Aditya Shakya
- * Mail    : adi1090x@gmail.com
- * Github  : @adi1090x
- * Twitter : @adi1090x
- *
- */
-
 configuration {
     font: 							"Iosevka Nerd Font 12";
     fixed-num-lines: 				true;
@@ -24,7 +15,7 @@ configuration {
     display-combi: 					"";
 }
 
-@import "styles/colors.rasi"
+@import "colors.rasi"
 
 * {
     background-color:             	@bg;
