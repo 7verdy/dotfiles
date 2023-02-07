@@ -23,3 +23,14 @@ ln -sf "$SCRIPT_WD/profile" "$HOME/.profile"
 
 # Set symlink for vimrc
 ln -sf "$SCRIPT_WD/vimrc" "$HOME/.vimrc"
+
+# Symlink volumes scripts in /bin to be used by i3
+sudo mkdir -p "/bin/volume_scripts"
+sudo ln -sf "$SCRIPT_WD/volume_scripts/mute.sh" "/bin/volume_scripts/mute.sh"
+sudo ln -sf "$SCRIPT_WD/volume_scripts/volume-decrease.sh" "/bin/volume_scripts/volume-decrease.sh"
+sudo ln -sf "$SCRIPT_WD/volume_scripts/volume-increase.sh" "/bin/volume_scripts/volume-increase.sh"
+sudo ln -sf "$SCRIPT_WD/volume_scripts/volume-get.sh" "/bin/volume_scripts/volume-get.sh"
+
+# Symlink dunst config
+mkdir -p "$HOME/.config/dunst"
+ln -sf "$SCRIPT_WD/dunst/dunstrc" "$HOME/.config/dunst/dunstrc"

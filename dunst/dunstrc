@@ -1,0 +1,6 @@
+[urgency_normal]
+timeout = 8
+background = "#6fa8dd"
+foreground = "#707880"
+frame_color = "#6fa8dd"
+format = <span color="#ffffff">%s</span>

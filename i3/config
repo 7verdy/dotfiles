@@ -61,9 +61,10 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 # bindsym XF86MonBrightnessUp exec "$HOME/bright.sh Up; notify-send 'brightness up'"
 # bindsym XF86MonBrightnessDown exec "$HOME/bright.sh Down; notify-send 'brightness down'"
 
-bindsym XF86AudioRaiseVolume exec "$HOME/utils/i3-volume-ctrl/volume-increase.sh"
-bindsym XF86AudioMute exec "$HOME/utils/i3-volume-ctrl/mute.sh"
-bindsym XF86AudioLowerVolume exec "$HOME/utils/i3-volume-ctrl/volume-decrease.sh"
+exec --no-startup-id pkill dunst; dunst
+bindsym XF86AudioRaiseVolume exec "/bin/volume_scripts/volume-increase.sh"
+bindsym XF86AudioMute exec "/bin/volume_scripts/mute.sh"
+bindsym XF86AudioLowerVolume exec "/bin/volume_scripts/volume-decrease.sh"
 
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
