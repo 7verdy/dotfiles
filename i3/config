@@ -56,10 +56,8 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 ################################################################################################
 
 # Screen brightness controls
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
-# bindsym XF86MonBrightnessUp exec "$HOME/bright.sh Up; notify-send 'brightness up'"
-# bindsym XF86MonBrightnessDown exec "$HOME/bright.sh Down; notify-send 'brightness down'"
+bindsym XF86MonBrightnessUp exec "/bin/brightness_scripts/brightness-up.sh"
+bindsym XF86MonBrightnessDown exec "/bin/brightness_scripts/brightness-down.sh"
 
 exec --no-startup-id pkill dunst; dunst
 bindsym XF86AudioRaiseVolume exec "/bin/volume_scripts/volume-increase.sh"
