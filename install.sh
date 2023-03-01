@@ -1,7 +1,7 @@
 SCRIPT_WD="$(dirname $(realpath "$BASH_SOURCE"))"
 
 # Copy the background to ~/Pictures to be used by i3
-cp "$SCRIPT_WD/img/bloom.png" "$HOME/Pictures/"
+cp -r "$SCRIPT_WD/img/." "$HOME/Pictures/"
 
 # Set symlink for i3 config
 ln -sf "$SCRIPT_WD/i3/config" "$HOME/.config/i3/config"
