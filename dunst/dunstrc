@@ -4,3 +4,6 @@ background = "#ff5160"
 foreground = "#ff5160"
 frame_color = "#ff5160"
 format = <span color="#ffffff">%s</span>
+
+[global]
+corner_radius = 7
